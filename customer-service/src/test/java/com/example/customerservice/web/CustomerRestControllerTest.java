@@ -41,7 +41,7 @@ class CustomerRestControllerTest {
     }
 
     @Test
-    void shouldGetAllCustomers() throws Exception {
+    void ShouldGetAllCustomers() throws Exception {
         Mockito.when(customerService.getAllCustomers()).thenReturn(customers);
         mockMvc.perform(MockMvcRequestBuilders.get("/api/customers"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
